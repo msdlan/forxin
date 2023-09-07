@@ -8,6 +8,7 @@
             position: absolute;
             top: -30px;
             left: 70%;
+            color: red;
             font-size: 25px;
         }
 
@@ -22,12 +23,10 @@
 <body>
     <div class="xin">♥</div>
     <script>
-        let colors = ['#FF1700', '#FF74C3', '#FF46C2', '#FF8BA2', '#FF4695']
         for (let i = 0; i < 100; i++) {
             let xin = document.createElement('div')
             xin.className = 'xin'
             xin.innerHTML = '♥'
-            xin.style.color = colors[Math.floor(Math.random() * colors.length)]
             document.body.appendChild(xin)
             let randTrans = Math.round(15 + Math.random() * 5)
             xin.style.transition = `all ${randTrans}s  linear`
